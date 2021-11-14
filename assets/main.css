@@ -1,0 +1,15 @@
+@font-face{ font-family: main; src: url("https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2"); }
+a { color: #7e7e7e; font-family: main; font-size: 1.3359rem; }
+
+.img {
+    position: fixed;
+    transform: translate(-50%, 2.23rem) scale(1.25);
+    bottom: 0px; left: 50%;
+    height: 30rem; width: 95rem;
+}
+
+#contact {
+    position: fixed;
+    transform: translate(-50%, -50%) scale(1.25);
+    left: 50%; bottom: 50%;
+}
