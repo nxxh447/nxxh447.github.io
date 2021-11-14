@@ -1,0 +1,18 @@
+#mIcon, #contact { display: none; }
+@keyframes spinner {
+    0% { transform: translate3d(-50%, -50%, 0) rotate(0deg); }
+    100% { transform: translate3d(-50%, -50%, 0) rotate(360deg); }
+}
+
+#spinner::before {
+    content: " ";
+    animation: 1.5s linear infinite spinner;
+    animation-play-state: inherit;
+    border: solid 5px #cfd0d1;
+    border-bottom-color: #000;
+    border-radius: 50%;
+    height: 2rem; width: 2rem;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate3d(-50%, -50%);
+}
