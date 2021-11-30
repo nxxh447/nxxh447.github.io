@@ -24,22 +24,6 @@ main {
   flex-direction: column;
 }
 
-.title {
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
-  font-size: 2.8em;
-  margin-top: 1.5em;
-
-  small {
-    display: block;
-    font-size: 0.6em;
-    margin-top: 0.4em;
-  }
-}
-
-
 .window {
   width:547px;
   background:@color-2nd;
@@ -135,18 +119,12 @@ main {
    }
 }
 
-// Prism.js colors
 a.token { text-decoration: none; }
 .token {
   &.selector, &.punctuation, &.keyword { color:PaleVioletRed; }
   &.property, &.number, &.string, &.punctuation, &.tag-id { color: DodgerBlue; }	
   &.function, &.attr-name { color: CadetBlue; }
-  &.atrule {
-    .atrule-id {
-      color: BlueViolet;	
-    }
-  }
-	
+  &.atrule { .atrule-id { color: BlueViolet;  }
   &.boolean { color: LightSlateGray; }
   &.comment { color: DarkGrey; }
 }
