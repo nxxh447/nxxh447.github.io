@@ -51,3 +51,16 @@ el.addEventListener("keyup", e => {
     setCaret(pos);
   }
 });
+
+/*
+fnAstyle = function attribute style
+decStyle = declatarive element style
+cmtStyle = comment style
+*/
+
+document.getElementsByTagName("span").setAttributeNode(document.createAttribute("class").value = "fnAttr"); // tmp
+
+
+document.getElementsByTagName("fn-attr-elm").setAttributeNode(document.createAttribute("class").value = "fnAstyle");
+document.getElementsByTagName("dec-elm").setAttributeNode(document.createAttribute("class").value = "decStyle");
+document.getElementsByTagName("cmt-elm").setAttributeNode(document.createAttribute("class".value = "cmtStyle"))
