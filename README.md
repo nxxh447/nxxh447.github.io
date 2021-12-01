@@ -21,13 +21,13 @@
 |
 +--main.css
 |
-+--newEditor.js
++--editor.js
 |
-+--newEditor.less
++--editor.less
 
 [ext]
 |
-+--newEditor.html
++--new.html
 
 
 [imports]
