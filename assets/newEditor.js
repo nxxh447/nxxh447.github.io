@@ -18,6 +18,7 @@ const caret = el => {
   
   prefix.selectNodeContents(el);
   prefix.setEnd(range.endContainer, range.endOffset);
+  
   return prefix.toString().length;
 };
 
