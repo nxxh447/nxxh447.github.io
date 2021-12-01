@@ -1,7 +1,7 @@
 CodeMirror(document.querySelector("#editorContainer"), {
   lineNumbers: true,
   tabSize: 2,
-  value: 'console.log("Hello, World");',
-  mode: 'javascript',
-  theme: 'monokai'
+  value: '// editor version (beta) :) \nconsole.log("Hello, World");',
+  mode: "javascript",
+  theme: "monokai"
 });
