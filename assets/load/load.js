@@ -4,6 +4,7 @@ setTimeout(()=> { document.getElementById("mIcon").style.display = "block"; }, 3
 setTimeout(() => { document.getElementById("contact").style.display = "block"; }, 3000);
 */
 
+/*
 setTimeout(function() {
   const ge = (v) => { return document.getElementById(v); }
   const elms = [ge("mIcon"),ge("contact")];
@@ -13,3 +14,12 @@ setTimeout(function() {
     this.style.display = "block";
   }); oelm.style.display = "none";
 }, 3000);
+*/
+
+setTimeout(function(document.getElementById("spinner")) { this.style.display = "none" });
+setTimeout(function() {
+  const elms = [document.getElementById("mIcon"), document.getElementById("contact")];
+  elms.forEach(function(item) {
+    this.style.display = "block"
+  });
+});
