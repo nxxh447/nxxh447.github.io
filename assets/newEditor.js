@@ -1,3 +1,4 @@
+const el = document.querySelector(".editor");
 const js = el => {
   for (const node of el.children) {
     const s = node.innerText
@@ -20,7 +21,7 @@ const caret = el => {
   prefix.setEnd(range.endContainer, range.endOffset);
   
   return prefix.toString().length;
-};
+}; el.focus(); editor(el);
 
 const setCaret = (pos, parent) => {
   for (const node of parent.childNodes) {
