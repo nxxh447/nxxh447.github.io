@@ -1,6 +1,6 @@
-function loadFn(elm, style) {
+function loadFn(elmName, dispType) {
   return setInterval(function() {
-    document.getElementById(elm).style.display = style;
+    document.getElementById(elmName).style.display = dispType;
   }, 3000)
 }
 
