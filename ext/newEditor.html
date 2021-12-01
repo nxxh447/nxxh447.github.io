@@ -7,32 +7,9 @@
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
   </head>
   <body>
-    <main class="main">
-      <div class="mCont">
-        <select class="langSelect">
-          <option value="js" selected>JavaScript (soon)</option>
-          <option value="html">HTML (soon)</option>
-          <option value="css">CSS (soon)</option>
-          <option value="golang">Golang (soon)</option>
-          <option value="c">C (soon)</option>
-          <option value="cpp">C++ (soon)</option>
-        </select>
-        <div class="cEditorCont">
-          <textarea class="cEditor">
-            // [args]...
-          </textarea>
-        </div>
-        <div class="stats">
-          <div id="lang"></div>
-          <div id="lines"></div>
-          <div id="chars"></div>
-        </div>
-      </div>
-      <div class="footer">
-        <div id="github"></div>
-        <div id="twitter"></div>
-        <div id="discord"></div>
-      </div>
-    </main>
+    <div class="editor" contenteditable="true" spellcheck="false">
+      <div>// editor version (beta)</div>
+      <div>console.log("Hello, world!");</div>
+    </div>
   </body>
 </html>
