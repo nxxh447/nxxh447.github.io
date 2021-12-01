@@ -1,74 +1,63 @@
-const js = el => {
-  for (const node of el.children) {
-    const s = node.innerText
-      .replace(/(\/\/.*)/g, '<em>$1</em>')
-      .replace(
-        /\b(new|if|else|do|while|switch|for|in|of|continue|break|return|typeof|function|var|const|let|\.length|\.\w+)(?=[^\w])/g,
-        '<span>$1</span>',
-      )
-      .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
-      .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
-    node.innerHTML = s.split('\n').join('<br/>');
+/* @flow */
+/* global require */
+/* eslint-disable import/no-commonjs */
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Editor from '../src/index';
+import dedent from 'dedent';
+import { highlight, languages } from 'prismjs/components/prism-core';
+import 'prismjs/components/prism-clike';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-markup';
+import './styles.css';
+
+require('prismjs/components/prism-jsx');
+type State = { code: string, };
+
+class App extends React.Component<{}, State> {
+  state = {
+    code: dedent`
+    import React from "react";
+    import ReactDOM from "react-dom";
+
+    function App() {
+      return (
+        <h1>Hello world</h1>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+    `,
+  };
+
+  render() {
+    return (
+      <main className="container">
+        <div className="container__content">
+          <h1>react-simple-code-editor</h1>
+          <p>A simple no-frills code editor with syntax highlighting.</p>
+          <a
+            className="button"
+            href="https://github.com/satya164/react-simple-code-editor"
+          >
+            GitHub
+          </a>
+          <div className="container_editor_area">
+            <Editor
+              placeholder="Type some code…"
+              value={this.state.code}
+              onValueChange={code => this.setState({ code })}
+              highlight={code => highlight(code, languages.jsx)}
+              padding={10}
+              className="container__editor"
+            />
+          </div>
+        </div>
+      </main>
+    );
   }
-};
+}
 
-const editor = (el, highlight = js, tab = '    ') => {
-  const caret = () => {
-    const range = window.getSelection().getRangeAt(0);
-    const prefix = range.cloneRange();
-    
-    prefix.selectNodeContents(el);
-    prefix.setEnd(range.endContainer, range.endOffset);
-    
-    return prefix.toString().length;
-  };
-
-  const setCaret = (pos, parent = el) => {
-    for (const node of parent.childNodes) {
-      if (node.nodeType == Node.TEXT_NODE) {
-        if (node.length >= pos) {
-          const range = document.createRange();
-          const sel = window.getSelection();
-          
-          range.setStart(node, pos);
-          range.collapse(true);
-          sel.removeAllRanges();
-          sel.addRange(range);
-          
-          return -1;
-        } else { pos = pos - node.length; }
-      } else {
-        pos = setCaret(pos, node);
-        if (pos < 0) { return pos; }
-      }
-    }
-    
-    return pos;
-  };
-
-  highlight(el);
-
-  el.addEventListener('keydown', e => {
-    if (e.which === 9) {
-      const pos = caret() + tab.length;
-      const range = window.getSelection().getRangeAt(0);
-      range.deleteContents();
-      range.insertNode(document.createTextNode(tab));
-      highlight(el);
-      setCaret(pos);
-      e.preventDefault();
-    }
-  });
-
-  el.addEventListener('keyup', e => {
-    if (e.keyCode >= 0x30 || e.keyCode == 0x20) {
-      const pos = caret();
-      highlight(el);
-      setCaret(pos);
-    }
-  });
-};
-
-const el = document.querySelector('.editor');
-el.focus();
-editor(el);
+/* $FlowFixMe */
+ReactDOM.render(<App />, document.getElementById('root'));
