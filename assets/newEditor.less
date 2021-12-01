@@ -1,7 +1,7 @@
-@declarativeC: LightCoral;
-@commentC: DarkGrey;
-@booleanC: #745ca0;
-
-.var, .const, .let. func { color: $declarativeC; }
-.bool { color: $booleanC; }
-.comment { color: $commentC; }
+.editor { counter-reset: line; }
+.editor div::before {
+  content: counter(line);
+  counter-increment: line;
+  position: absolute;
+  right: calc(100% + 16px);
+}
