@@ -1,5 +1,5 @@
 function loadFn(elm, style) {
-  return setInterval(() => {
+  return setInterval(function() {
     document.getElementById(elm).style.display = style;
   }, 3000)
 }
