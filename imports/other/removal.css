@@ -5,5 +5,5 @@
 .krSocial, #mailCount, #voiceDisplay, #bubbleContainer,
 .endAHolder, #igXPBar, .button.small.buttonO img,
 #tlInfHold, #loadEditrBtn, .settingsBtn[onclick="openOneTrust()"],
-.menuSocialB, .setSugBox2 { display: none !important }
+.menuSocialB, .setSugBox2, #mainLogo { display: none !important }
 .button, .button:hover, .quickJoin{ border: hidden !important }
