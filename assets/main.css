@@ -3,13 +3,14 @@ a { color: #7e7e7e; font-family: main; font-size: 1.3359rem; }
 
 .img {
     position: fixed;
-    transform: translate(-50%, 3rem);
-    bottom: 50%; left: 50%;
-    height: 5100%; width: 100%;
+    bottom: 0; left: 0;
+    height: auto; width: auto;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 #contact {
     position: fixed;
     transform: translate(-50%, -50%) scale(1.25);
-    left: 50%; bottom: 44.9%;
+    left: 50%; bottom: 42.6%;
 }
