@@ -1,0 +1,8 @@
+@import url("https://nxxh447.github.io/assets/css/variables.css");
+
+body { background-color: var(--m-bg-col) }
+*, body {
+    font-family: "Short Stack", cursive;
+    color: var(--m-col);
+    padding: 0; margin: 0;
+}
