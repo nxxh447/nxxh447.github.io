@@ -1,17 +1,9 @@
-@font-face{ font-family: main; src: url("https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2"); }
-* { padding:0;margin:0; }
-a { color: #7e7e7e; font-family: main; font-size: 1.3359rem; }
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+@import url("https://nxxh447.github.io/assets/css/default.css");
 
-.img {
-    position: fixed;
-    bottom: 0; left: 0;
-    height: auto; width: auto;
-    min-height: 100%;
-    min-width: 100%;
-}
-
-#contact {
-    position: absolute;
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
+#borderText { padding: 3.36px }
+.aContainer {
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-image: url("./img/border.svg") 10 10 10 10 stretch stretch;
 }
