@@ -1,4 +1,4 @@
-@import url("https://nxxh447.github.io/assets/css/variables.css");
+@import url("./variables.css");
 
 body { background-color: var(--m-bg-col) }
 *, body {
