@@ -3,7 +3,76 @@
 
 #borderText { padding: 3.36px }
 .aContainer {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%; top: 40%;
+    width: auto;
+    min-width: 100px;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
     border-image: url("./img/border.svg") 10 10 10 10 stretch stretch;
+}
+
+#aboutMe, #otherInfo, #footer {
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-image: url("./img/border.svg") 10 10 10 10 stretch stretch;
+}
+
+.list {
+    margin-top: 0.4rem;
+    margin-bottom: 0.7rem;
+    margin-left: 2.1rem;
+}
+
+#othInfTable {
+    margin-left: calc(50% - 7.5rem);
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#footer {
+    font-size: 9px;
+    text-align: center;
+}
+
+#kitty {
+    position: absolute;
+    transform: translate(-50%);
+    left: 6rem;
+    bottom: -1px;
+    height: auto;
+    width: auto;
+    max-height: 22vh;
+    max-width: 22vw;
+}
+
+#froggy {
+    position: absolute;
+    transform: translate(3%);
+    right: 1rem;
+    bottom: -5px;
+    height: auto;
+    width: auto;
+    max-height: 22vh;
+    max-width: 22vw;
+}
+
+#flower1 {
+    position: absolute;
+    transform: translate(-20%, -40%) rotate(10deg);
+    top: 0; left: 0;
+    height: auto;
+    width: auto;
+    max-height: 25vh;
+    max-width: 25vw;
+}
+
+#flower2 {
+    position: absolute;
+    transform: translate(100%, 13%);
+    max-height: 5vh;
+    max-width: 5vw;
+    height: auto;
+    width: auto;
 }
