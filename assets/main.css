@@ -5,9 +5,8 @@
 .aContainer {
     position: fixed;
     transform: translate(-50%, -50%);
-    left: 50%; top: 44.679%;
-    width: auto;
-    min-width: 100px;
+    left: 50%; top: 44.68%;
+    width: auto; min-width: 100px;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
     border-image: url("./img/border.svg") 10 10 10 10 stretch stretch;
