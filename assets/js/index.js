@@ -6,7 +6,7 @@ function recordData(data) {
   
     if (country === russian) {
         sleep(2000).then(() => {
-            window.location.replace("");
+            window.location.replace("../redirect.html");
         });
     } else console.log("check passed");
 }
