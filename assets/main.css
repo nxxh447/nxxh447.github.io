@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-#kitty {
+#icon-1 {
     position: absolute;
     transform: translate(9%, 1%);
     left: 0; bottom: 0;
@@ -43,7 +43,7 @@
     max-height: 22vh; max-width: 22vw;
 }
 
-#froggy {
+#icon-2 {
     position: absolute;
     transform: translate(0, 3%);
     right: 0; bottom: 0;
@@ -51,7 +51,7 @@
     max-height: 22vh; max-width: 22vw;
 }
 
-#flower1 {
+#icon-3 {
     position: absolute;
     transform: translate(-20%, -40%) rotate(10deg);
     top: 0; left: 0;
@@ -59,7 +59,7 @@
     max-height: 25vh; max-width: 25vw;
 }
 
-#flower2 {
+#icon-4 {
     position: absolute;
     transform: translate(100%, 13%);
     max-height: 5vh; max-width: 5vw;
@@ -67,7 +67,7 @@
     z-index: 1;
 }
 
-#flower3 {
+#icon-5 {
     position: absolute;
     transform: translate(-50%, -50%) rotate(-50deg);
     height: auto; width: auto;
