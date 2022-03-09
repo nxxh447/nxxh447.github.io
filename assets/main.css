@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 @import url("./css/default.css");
 
+
+#disclaimerStyle { text-decoration: none !important }
 #borderText { padding: 3.36px }
 .aContainer {
     position: fixed;
