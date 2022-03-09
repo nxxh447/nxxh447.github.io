@@ -1,5 +1,5 @@
 const nxTitleElm = document.getElementById("borderText");
-const nsbpElm =  document.getElementByClassName("nbsp");
+const nbspElm =  document.getElementByClassName("nbsp");
 
 nxTitleElm.innerText = "< Nxxh447 :) />";
 nbspElm.innerText = ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
