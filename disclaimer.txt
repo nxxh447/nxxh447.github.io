@@ -1,0 +1,2 @@
+russian geolocation redirect made by me (original idea from [https://github.com/Riceblade/Russia-Blocker] who has since updated to my version of the code)
+and im too lazy to find the sources for the images :zanny:
