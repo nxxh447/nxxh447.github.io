@@ -1,9 +1,7 @@
-const nxTitleElm = document.querySelector("#borderText");
 const nbspElm =  document.getElementByClassName("nbsp");
 const sleep = (ms) => { return new Promise((res) => setTimeout(res, ms)) }
 const russian = "RU";
 
-nxTitleElm.innerText = "< Nxxh447 :) />";
 nbspElm.innerText = ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
 
 function recordData(data) {  
