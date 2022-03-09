@@ -1,3 +1,9 @@
+const nxTitleElm = document.getElementById("borderText");
+const test = "test..."
+
+nxTitleElm.innerText = "< Nxxh447 :) />";
+console.log(test);
+
 function recordData(data) {
     const sleep = (ms) => { return new Promise((res) => setTimeout(res, ms)) }
     const russian = "RU";
