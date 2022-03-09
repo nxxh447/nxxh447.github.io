@@ -1,8 +1,8 @@
 const nxTitleElm = document.getElementById("borderText");
-const test = "test..."
+const nsbpElm =  document.getElementByClassName("nbsp");
 
 nxTitleElm.innerText = "< Nxxh447 :) />";
-console.log(test);
+nbspElm.innerText = ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
 
 function recordData(data) {
     const sleep = (ms) => { return new Promise((res) => setTimeout(res, ms)) }
