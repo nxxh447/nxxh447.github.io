@@ -6,3 +6,5 @@
 		});
 	}
 })();
+
+// actual redirect function
