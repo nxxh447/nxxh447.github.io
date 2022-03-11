@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
-@import url("./css/default.css");
 
+body { background-color: #FFE6DD }
+*, body {
+    font-family: "Short Stack", cursive;
+    color: #3c3c3c;
+    padding: 0; margin: 0;
+}
 
 #disclaimerStyle { text-decoration: none !important }
 #borderText { padding: 3.36px }
