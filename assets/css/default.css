@@ -1,8 +1,6 @@
-@import url("./variables.css");
-
-body { background-color: var(--m-bg-col) }
+body { background-color: #FFE6DD }
 *, body {
     font-family: "Short Stack", cursive;
-    color: var(--m-col);
+    color: #3c3c3c;
     padding: 0; margin: 0;
 }
