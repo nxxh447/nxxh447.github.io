@@ -1,4 +1,4 @@
-const nbspElm =  document.getElementByClassName("nbsp");
+const nbspElm =  document.getElementsByClassName("nbsp");
 const russian = "RU";
 
 nbspElm.innerText = ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
