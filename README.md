@@ -1,5 +1,7 @@
 # nxxh447.github.io
 
+im going to update the site and use a UI lib
+
 ..
 
 <!--
