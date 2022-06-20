@@ -1,11 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family=Short+Stack&display=swap);
-body { background-color: #ffe6dd }
-*,body {
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
+*, body {
     font-family: "Short Stack", cursive;
     color: #3c3c3c;
     padding: 0; margin: 0
 }
 
+body { background-color: #ffe6dd }
 #disclaimerStyle { text-decoration: none !important }
 #borderText { padding: 3.36px }
 
@@ -20,6 +21,7 @@ body { background-color: #ffe6dd }
     border-width: 10px 10px 10px 10px;
     border-image: url("./img/border.svg") 10 10 10 10 stretch stretch
 }
+
 #aboutMe,#footer,#otherInfo{
     border-style:solid;
     border-width:10px 10px 10px 10px;
@@ -83,4 +85,3 @@ body { background-color: #ffe6dd }
     max-height: 20vh; max-width: 20vw;
     z-index:-1
 }
- 
